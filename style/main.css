@@ -30,6 +30,27 @@ body, html {
     background: rgba(161, 44, 199, 0.31);
 }
 
+.countdown {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 4em;
+    color: #E5E5E5;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    line-height: 1.3;
+    padding: 5px 10px 5px 10px;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 100;
+}
+
+.timevalue {
+    font-weight: 700;
+    color: rgb(236, 240, 159);
+}
+
 footer {
     position: absolute;
     bottom: 0;
