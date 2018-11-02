@@ -1,0 +1,47 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('../img/background.jpg');
+    opacity: 0.8;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.filter {
+    -webkit-filter: contrast(140%) sepia(50%);
+    filter: contrast(140%) sepia(50%);
+}
+
+.filter::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    background: rgba(161, 44, 199, 0.31);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    text-align: center;
+    font-size: 1em;
+    color: #E5E5E5;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 300;
+    margin-bottom: 2%;
+}
+
+footer > a {
+    color: #E5DF1C;
+}
