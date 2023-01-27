@@ -11,7 +11,7 @@ setInterval(function() {
     var now = new Date().getTime();
 
     // Find the distance between now and the countdown date
-    var distance = countDownDate - now;
+    var distance = Math.abs(countDownDate - now);
 
     // Time calculations for days, hours, minutes and seconds
     daysElement.innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
